@@ -11,7 +11,7 @@ var topLevel = typeof global !== 'undefined'
   : typeof window !== 'undefined'
     ? window
     : {};
-var scopedDocument = scopedDocument;
+var scopedDocument = topLevel.document;
 var styletron = topLevel[constants.INSTANCE_KEY];
 
 if (!styletron) {
